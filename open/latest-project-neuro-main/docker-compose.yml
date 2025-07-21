@@ -1,0 +1,35 @@
+services:
+   graph:
+      image: zepai/graphiti:latest
+      ports:
+         - "18000:8000"
+      depends_on:
+         - neo4j
+      environment:
+         # LLM Configuration
+         - LLM_PROVIDER=${LLM_PROVIDER:-openai}
+         # OpenAI Configuration
+         - OPENAI_API_KEY=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
+         # Ollama Configuration
+         - OLLAMA_BASE_URL=${OLLAMA_BASE_URL:-http://host.docker.internal:11434/v1}
+         - OLLAMA_LLM_MODEL=${OLLAMA_LLM_MODEL:-deepseek-r1:7b}
+         - OLLAMA_SMALL_MODEL=${OLLAMA_SMALL_MODEL:-deepseek-r1:7b}
+         - OLLAMA_EMBEDDING_MODEL=${OLLAMA_EMBEDDING_MODEL:-nomic-embed-text}
+         - OLLAMA_EMBEDDING_DIM=${OLLAMA_EMBEDDING_DIM:-768}
+         # Neo4j Configuration
+         - NEO4J_URI=bolt://neo4j:${NEO4J_PORT}
+         - NEO4J_USER=${NEO4J_USER}
+         - NEO4J_PASSWORD=${NEO4J_PASSWORD}
+   neo4j:
+      image: neo4j:5.26
+
+      ports:
+         - "7474:7474"  # HTTP
+         - "7687:7687"  # Bolt
+      volumes:
+         - neo4j_data:/data
+      environment:
+         - NEO4J_AUTH=neo4j/demodemo
+
+volumes:
+   neo4j_data:

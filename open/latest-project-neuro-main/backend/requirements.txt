@@ -1,0 +1,25 @@
+fastapi
+uvicorn
+pydantic
+openai-whisper
+torch
+python-multipart
+sqlalchemy
+requests
+# Knowledge Graph dependencies
+httpx
+python-dotenv
+beautifulsoup4
+spacy
+nltk
+pydub
+# RAG Pipeline dependencies
+chromadb
+sentence-transformers
+numpy
+scikit-learn
+# Additional utilities
+aiofiles
+websockets
+
+PyPDF2

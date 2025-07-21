@@ -1,0 +1,75 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.env
+
+dev-debug.log
+# Dependency directories
+node_modules/
+# Environment variables
+.vscode
+# OS specific
+
+# Task files
+# tasks.json
+# tasks/ 
+
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.log
+*.dll
+*.lib
+
+# Chroma database files (vector database runtime data)
+backend/chroma_conversations/
+backend/chroma_summaries/
+
+# Database files
+backend/transcripts.db
+backend/*.db
+
+# Generated data files
+backend/generated_graph_data.json
+generated_graph_data.json
+backend/sample_graph_data.json
+
+# API keys and config
+backend/config/api_keys.py
+
+# Test and debug files
+backend/test_*.py
+backend/debug_*.py
+backend/add_test_data.py
+
+# Audio files (can be large)
+backend/audios/
+*.wav
+*.mp3
+
+# Docker and deployment
+dummy.backend.yml

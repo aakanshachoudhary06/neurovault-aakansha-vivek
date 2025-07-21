@@ -1,0 +1,36 @@
+{
+  "relationships": [
+    {
+      "source": "Knowledge Base",
+      "target": "Entity Extraction",
+      "relationship": "enables",
+      "category": "system",
+      "properties": {
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "Entity Extraction",
+      "target": "Graph Construction",
+      "relationship": "feeds_into",
+      "category": "system",
+      "properties": {
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "Graph Construction",
+      "target": "Knowledge Visualization",
+      "relationship": "enables",
+      "category": "system",
+      "properties": {
+        "weight": 1.0
+      }
+    }
+  ],
+  "categories": {
+    "system": "System components and processes",
+    "user": "User-defined relationships",
+    "auto": "Automatically generated relationships"
+  }
+}

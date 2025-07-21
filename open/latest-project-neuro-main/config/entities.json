@@ -1,0 +1,34 @@
+{
+  "entities": [
+    {
+      "name": "Knowledge Base",
+      "type": "system",
+      "category": "core",
+      "description": "Central knowledge management system"
+    },
+    {
+      "name": "Entity Extraction",
+      "type": "process",
+      "category": "nlp",
+      "description": "Natural language processing for entity identification"
+    },
+    {
+      "name": "Graph Construction",
+      "type": "process",
+      "category": "graph",
+      "description": "Building knowledge graphs from extracted entities"
+    },
+    {
+      "name": "Knowledge Visualization",
+      "type": "interface",
+      "category": "ui",
+      "description": "Visual representation of knowledge graphs"
+    }
+  ],
+  "categories": {
+    "core": "Core system components",
+    "nlp": "Natural language processing",
+    "graph": "Graph-related processes",
+    "ui": "User interface components"
+  }
+}

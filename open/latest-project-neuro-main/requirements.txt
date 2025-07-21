@@ -1,0 +1,31 @@
+fastapi
+uvicorn
+pydantic
+openai-whisper
+torch
+python-multipart
+sqlalchemy
+requests
+# Knowledge Graph dependencies
+httpx
+python-dotenv
+beautifulsoup4
+spacy
+nltk
+
+# Optional dependencies
+openai==1.3.0
+openai-whisper==20231117
+qdrant-client==1.6.9
+# Multimedia processing
+Pillow==10.1.0          # Image processing
+opencv-python-headless==4.8.1.78 # Video processing (headless for Docker)
+moviepy==1.0.3          # Video/audio processing
+pytesseract==0.3.10     # OCR for images
+requests==2.31.0        # Web scraping
+beautifulsoup4==4.12.2  # HTML parsing
+yt-dlp==2023.12.30      # Video download (modern replacement for youtube-dl)
+pydub==0.25.1           # Audio processing
+
+# For NLP processing
+# Run: python -m spacy download en_core_web_sm

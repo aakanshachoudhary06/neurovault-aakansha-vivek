@@ -1,0 +1,89 @@
+{
+  "relationships": [
+    {
+      "source": "Knowledge Base",
+      "target": "Entity Extraction",
+      "relationship": "enables",
+      "category": "system",
+      "properties": {
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "Entity Extraction",
+      "target": "Graph Construction",
+      "relationship": "feeds_into",
+      "category": "system",
+      "properties": {
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "Graph Construction",
+      "target": "Knowledge Visualization",
+      "relationship": "enables",
+      "category": "system",
+      "properties": {
+        "weight": 1.0
+      }
+    },
+    {
+      "source": "Tim Cook",
+      "target": "Apple",
+      "relationship": "CEO_OF",
+      "category": "business",
+      "properties": {
+        "weight": 1.0,
+        "since": "2011"
+      }
+    },
+    {
+      "source": "Sundar Pichai",
+      "target": "Google",
+      "relationship": "CEO_OF",
+      "category": "business",
+      "properties": {
+        "weight": 1.0,
+        "since": "2015"
+      }
+    },
+    {
+      "source": "Satya Nadella",
+      "target": "Microsoft",
+      "relationship": "CEO_OF",
+      "category": "business",
+      "properties": {
+        "weight": 1.0,
+        "since": "2014"
+      }
+    },
+    {
+      "source": "Apple",
+      "target": "Cupertino",
+      "relationship": "HEADQUARTERED_IN",
+      "category": "location",
+      "properties": {
+        "weight": 1.0,
+        "state": "California"
+      }
+    },
+    {
+      "source": "Google",
+      "target": "Mountain View",
+      "relationship": "HEADQUARTERED_IN",
+      "category": "location",
+      "properties": {
+        "weight": 1.0,
+        "state": "California"
+      }
+    }
+  ],
+  "categories": {
+    "system": "System components and processes",
+    "business": "Business relationships and leadership",
+    "location": "Geographic and location-based relationships",
+    "technology": "Technology and product relationships",
+    "user": "User-defined relationships",
+    "auto": "Automatically generated relationships"
+  }
+}
